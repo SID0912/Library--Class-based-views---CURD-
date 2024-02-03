@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authors List</title>
+  </head>
+  <body>
+    <h1>Authors List</h1>
+    <hr />
+    {% for author in authors %}
+      <li>
+        <a href="update/{{ author.pk }}/">{{ author.name }}</a>
+      </li>
+    {% endfor %}
+    <br />
+    <br />
+    <br />
+    <br />
+    <a href="/create">Add Author</a>
+    <br />
+    <a href="/admin">Admin</a>
+  </body>
+</html>
